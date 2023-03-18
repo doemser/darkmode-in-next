@@ -19,7 +19,7 @@ In our Styled Components, we then exclusively use CSS variables for colors.
 - [x] switches between light and dark theme
 - [ ] preferred scheme respected
 - [ ] decision remembered
-- [x] runs server-side
+- [x] works with server-side rendering
 
 ## [![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/darkmode-hwyff4?file=/src/App.js)
 
@@ -30,7 +30,7 @@ In our Styled Components, we then exclusively use CSS variables for colors.
 - [x] switches between light and dark theme
 - [x] preferred scheme respected
 - [ ] decision remembered
-- [ ] runs server-side
+- [ ] works with server-side rendering
 
 ## [![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/darkmode-media-query-vv4i5p?file=/src/App.js)
 
@@ -41,7 +41,7 @@ In our Styled Components, we then exclusively use CSS variables for colors.
 - [x] switches between light and dark theme
 - [x] preferred scheme respected
 - [x] decision remembered
-- [ ] runs server-side
+- [ ] works with server-side rendering
 
 ## [![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/darkmode-media-query-localstorage-cnfb5j?file=/src/App.js)
 
@@ -52,7 +52,7 @@ In our Styled Components, we then exclusively use CSS variables for colors.
 - [x] switches between light and dark theme
 - [x] preferred scheme respected
 - [x] decision remembered
-- [x] runs server-side
+- [x] works with server-side rendering
 
 Run the development server:
 
@@ -67,6 +67,6 @@ npm run dev
 - [x] switches between light and dark theme
 - [x] preferred scheme respected
 - [x] decision remembered
-- [x] runs server-side
+- [x] works with server-side rendering
 
 ## [![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/darkmode-usedarkmode-hook-u0io4f?file=/src/App.js)
