@@ -59,20 +59,3 @@ Run the development server:
 ```bash
 npm run dev
 ```
-
----
-
-### 5. Write a custom hook
-
-- [x] switches between light and dark theme
-- [x] preferred scheme respected
-- [x] decision remembered
-- [x] works with server-side rendering
-
-## [![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/darkmode-usedarkmode-hook-u0io4f?file=/src/App.js)
-
-> One major benefit of this approach is that it avoids the need to pass the `setDarkMode` function down through multiple levels of components. You can just import the hook to any component you need it in. localStorage is used like a global state.
->
-> This approach is similar to modern global state management libraries like zustand.js or jotai, which make it easy to define and manage global state in a React application.
->
-> By using a centralized state store, it's possible to avoid "prop drilling" and make the management of state much simpler and more efficient.
