@@ -1,13 +1,11 @@
 import StyledButton from "@/components/StyledButton";
-import useLocalStorageState from "use-local-storage-state";
 
-export default function Home() {
-  const [darkMode, setDarkMode] = useLocalStorageState("dark");
+export default function Home({ darkMode, onDarkMode }) {
   return (
     <StyledButton
       type="button"
       onClick={() => {
-        setDarkMode(!darkMode);
+        onDarkMode();
       }}
     >
       {darkMode ? "DARK" : "LIGHT"}

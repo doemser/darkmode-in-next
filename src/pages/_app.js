@@ -27,7 +27,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle darkMode={darkMode} />
-      <Component {...pageProps} />
+      <Component
+        {...pageProps}
+        darkMode={darkMode}
+        onDarkMode={() => setDarkMode(!darkMode)}
+      />
     </>
   );
 }
