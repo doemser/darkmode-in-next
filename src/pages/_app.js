@@ -1,8 +1,9 @@
 import GlobalStyle from "@/components/GlobalStyle";
-import useDarkMode from "@/hooks/useDarkMode";
+import withDarkMode from "next-dark-mode";
+import useDarkModeLocalStorage from "@/hooks/useDarkModeLocalStorage";
 
-export default function App({ Component, pageProps }) {
-  const { darkMode, setDarkMode } = useDarkMode();
+function App({ Component, pageProps }) {
+  const { darkMode, setDarkMode } = useDarkModeLocalStorage();
 
   return (
     <>
@@ -16,3 +17,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default withDarkMode(App);
