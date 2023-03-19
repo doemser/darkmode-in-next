@@ -6,9 +6,9 @@ This project demonstrates how to possibly implement a dark mode using styled-com
 
 ## Approach
 
-In our GlobalStyles, we declare the color variables using CSS custom properties and an if-else statement that depends on the 'darkMode' prop. The 'theme' object defines the colors for both light and dark modes.
+In our GlobalStyle component, we define the color variables using CSS custom properties within the :root selector, and we use an if-else statement that depends on the darkMode prop to determine which theme to use - either the light or dark theme defined in the theme object.
 
-In our Styled Components, we then exclusively use CSS variables for colors.
+In our Styled Components, we exclusively use CSS variables for colors.
 
 ---
 
