@@ -49,6 +49,8 @@ In our Styled Components, we exclusively use CSS variables for colors.
 
 ### 4. Work server-side
 
+> 💡 Not quite sure.
+
 - [x] switches between light and dark theme
 - [x] preferred scheme respected
 - [x] decision remembered
