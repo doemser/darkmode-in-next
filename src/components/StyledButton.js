@@ -5,15 +5,15 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 7px;
   font-size: x-large;
-  background: var(--primary-main);
-  color: var(--primary-contrast-text);
+  background: ${(props) => props.theme.primary.main};
+  color: ${(props) => props.theme.primary.contrast};
 
   &:hover {
-    background: var(--primary-light);
+    background: ${(props) => props.theme.primary.light};
   }
 
   &:active {
-    background: var(--primary-dark);
+    background: ${(props) => props.theme.primary.dark};
   }
 `;
 

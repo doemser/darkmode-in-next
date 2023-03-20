@@ -4,17 +4,9 @@ This project demonstrates how to possibly implement a dark mode using styled-com
 
 ---
 
-## Approach
-
-In our GlobalStyle component, we define the color variables using CSS custom properties within the :root selector, and we use an if-else statement that depends on the darkMode prop to determine which theme to use - either the light or dark theme defined in the theme object.
-
-In our Styled Components, we exclusively use CSS variables for colors.
-
----
-
 ## These are the iterations
 
-### 1. Concept
+### 1. ThemeProvider approach
 
 - [x] switches between light and dark theme
 - [ ] preferred scheme respected
@@ -49,7 +41,7 @@ In our Styled Components, we exclusively use CSS variables for colors.
 
 ### 4. Work server-side
 
-> 💡 Not quite sure.
+> 💡 Not quite sure yet, but this approach uses `next-dark-mode` and listens to the users preferred color scheme, until user makes a decision and `use-local-storage-state` takes over.
 
 - [x] switches between light and dark theme
 - [x] preferred scheme respected
