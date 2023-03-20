@@ -1,14 +1,36 @@
+import PageLayout from "@/components/PageLayout";
 import StyledButton from "@/components/StyledButton";
+import useDunkel, { getServerSideDunkel } from "@/hooks/useDunkel";
 
-export default function Home({ darkMode, onDarkMode }) {
+export async function getServerSideProps(context) {
+  return { props: { darkModeCookies: getServerSideDunkel(context) } };
+}
+
+export default function Home({ darkModeCookies }) {
+  const { darkMode, autoMode, setDarkMode, setAutoMode } =
+    useDunkel(darkModeCookies);
+
   return (
-    <StyledButton
-      type="button"
-      onClick={() => {
-        onDarkMode();
-      }}
-    >
-      {darkMode ? "DARK" : "LIGHT"}
-    </StyledButton>
+    <PageLayout darkMode={darkMode}>
+      <StyledButton
+        type="button"
+        disabled={autoMode}
+        onClick={() => {
+          setDarkMode(!darkMode);
+        }}
+      >
+        {darkMode ? "DARK" : "LIGHT"}
+      </StyledButton>
+      <hr />
+      <label htmlFor="input">auto:</label>
+      <input
+        type="checkbox"
+        id="input"
+        checked={autoMode}
+        onChange={() => {
+          setAutoMode(!autoMode);
+        }}
+      />
+    </PageLayout>
   );
 }

@@ -41,7 +41,7 @@ This project demonstrates how to possibly implement a dark mode using styled-com
 
 ### 4. Work server-side
 
-> 💡 Not quite sure yet, but this approach uses `next-dark-mode` and listens to the users preferred color scheme, until user makes a decision and `use-local-storage-state` takes over.
+> 💡 Not quite sure about this approach yet. Wrote a custom hook `useDunkel` that stores darkMode decisions in cookies, which can be accessed via getServerSideProps for that "no flicker" approach. Still work in progress.
 
 - [x] switches between light and dark theme
 - [x] preferred scheme respected

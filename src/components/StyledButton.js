@@ -15,6 +15,11 @@ const StyledButton = styled.button`
   &:active {
     background: ${(props) => props.theme.primary.dark};
   }
+
+  &:disabled {
+    background: lightgrey;
+    color: grey;
+  }
 `;
 
 export default StyledButton;
